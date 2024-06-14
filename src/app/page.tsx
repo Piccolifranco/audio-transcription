@@ -26,6 +26,7 @@ export default function Home() {
     setProgress(time);
 
     if (newMatch !== match.current) {
+      // @ts-ignore
       match.current = newMatch;
       document.getElementById(String(match.current?.start))?.scrollIntoView({
         behavior: "smooth",
